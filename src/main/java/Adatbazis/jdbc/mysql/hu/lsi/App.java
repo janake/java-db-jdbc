@@ -1,4 +1,4 @@
-package Adatbazis.hu.lsi;
+package Adatbazis.jdbc.mysql.hu.lsi;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
