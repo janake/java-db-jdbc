@@ -1,9 +1,18 @@
 package hu.lsi.adatbazis.jpa.derby.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="\"User\"")
 public class User {
 
 	private String name;
+	
 	private String password;
+	
+	@Id
 	private String email;
 	
 	public User() {
