@@ -43,9 +43,10 @@ public class App {
 	    	String prepsql = "SELECT c.cid FROM cache as c where c.cid = ?;";
 	    	p = connectionMysql.prepareStatement(prepsql);
 			p.setString(1, "schema");
-		    ResultSet prepresultset = p.executeQuery();
+		    ResultSet prepresultset = p.executeQuery();//executeUpdate()
 	    	while (prepresultset.next()) {
 	    		System.out.println(prepresultset.getString("cid"));
+//	    		System.out.println(prepresultset.getString(1));
 			}
 		
 		} catch (SQLException e) {
