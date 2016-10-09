@@ -20,10 +20,14 @@ public class DataProvider implements AutoCloseable {
 	
 	private void save(Object obj) {
 		EntityManager em = emf.createEntityManager();
-		em.getTransaction().begin();
-		em.persist(obj);
-		em.getTransaction().commit();
-		em.close();
+		try {
+			em.getTransaction().begin();
+			em.persist(obj);
+			em.getTransaction().commit();
+			
+		} finally {
+			em.close();
+		}
 	}
 	
 	public void addUser(User user) {
