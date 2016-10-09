@@ -1,4 +1,4 @@
-package Adatbazis.jdbc.mysql.hu.lsi;
+package hu.lsi.adatbazis.jdbc.mysql;
 
 public class DataBaseConf {
 	

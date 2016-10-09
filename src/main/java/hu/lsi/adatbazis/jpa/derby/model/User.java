@@ -1,4 +1,4 @@
-package Adatbazis.jdbc2.derby.hu.lsi;
+package hu.lsi.adatbazis.jpa.derby.model;
 
 public class User {
 
@@ -40,5 +40,4 @@ public class User {
 		return "User [name=" + name + ", password=" + password + ", email=" + email + "]";
 	}
 	
-
 }

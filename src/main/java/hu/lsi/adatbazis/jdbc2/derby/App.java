@@ -1,4 +1,4 @@
-package Adatbazis.jdbc2.derby.hu.lsi;
+package hu.lsi.adatbazis.jdbc2.derby;
 
 public class App {
 

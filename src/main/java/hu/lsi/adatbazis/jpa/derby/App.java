@@ -1,4 +1,4 @@
-package Adatbazis.jpa.derby.hu.lsi;
+package hu.lsi.adatbazis.jpa.derby;
 
 public class App {
 
